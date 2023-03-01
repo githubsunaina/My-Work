@@ -1,0 +1,6 @@
+{
+    "/api/s1/*": "/$1",
+    "product/:categories": "/product?categories=:categories",
+    "categories/:olditems": "/categories?olditems=:olditems"
+  
+}

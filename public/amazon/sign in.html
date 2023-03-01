@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign In</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        main{
+
+            text-align: center;
+            height: 30px;
+            margin-top: 13px;
+        }
+     
+        section{
+        
+           
+            color: black;
+           height: 390px;
+          
+            padding: 27px;
+            position: static;
+            margin: 0 auto;
+            border: 0.5px solid rgb(190, 189, 189);
+            border-radius: 3px;
+            width: 430px;
+            padding-left: 25px;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+       #mail{
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+    
+  
+    input[type=text]:focus{
+    border: 3px  solid rgb(248, 186, 72);
+    
+    }
+    
+    .con span{
+        font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 38, 38);
+    }
+    .terms{
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .con button{
+      background: linear-gradient(#F7DEA1, #f3bf3b);
+      border: 0.5px solid #797878;
+    }
+     .terms a{
+      text-decoration: none;
+     }
+    #foot a{
+      text-decoration: none;
+    }
+   #foot{
+    margin-top: 28px;
+    color: rgb(24, 109, 179);
+   }
+   details p{
+    margin-left: 17px;
+    margin-bottom: 0px;
+   }
+   .new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+    text-align: center;
+    margin-bottom: -3px;
+   }
+  
+   .new hr{
+    color: rgb(48, 47, 47);
+   }
+   #button button{
+    border:none ;
+   background: linear-gradient(#f5f6f8, #d2d2d3);
+    width: 450px;
+   }
+   #button{
+    border: 0.5px solid #aaaaaa;
+    width: 453px;
+    margin: 0 auto;
+    text-align: center;
+    /* background: linear-gradient(#8f9091,#a0a1a1); */
+  
+    border-radius: 3px;
+   }
+   #button button:hover{
+    background: linear-gradient(#f5f6f8, #bdbdbe);
+   }
+   .footer{
+    text-align: center;
+    font-size: 14px;
+   
+    width: 500px;
+    margin: 0 auto;
+/* margin-left: 436px; */
+   }
+   .footer span{
+    margin-right: 38px;
+   }
+   .footer a{
+    text-decoration: none;
+   }
+   #line{
+    color: #797878;
+    margin-top: 20px;
+    box-shadow: 4px 7px 14px rgb(99, 98, 98);
+    margin-bottom: 32px;
+   }
+   #footer2{
+    text-align: center;
+    font-size: 14px;
+    width: 496px;
+    margin: 0 auto;
+    margin-top: 13px;
+    /* margin-left: 414px; */
+   }
+   #footer2 p{
+    margin-left: -38px;
+   }
+   header{
+            height: 80px;
+            background-color:#131A22; 
+            color: white;
+            display: flex;
+    
+        }
+        .search{
+            width: 540px;
+            margin-left: 40px;
+            margin-top: 24px;
+        
+        }
+        #logo{
+            margin: 10px;
+            padding: 5px;
+            
+        }
+        #logo span{
+            font-size: 17px;
+        }
+        #logo h2{
+            font-size: 30px;
+        }
+        #loc{
+            /* margin-left: 20px; */
+            margin-top: 25px;
+            width: 83px;
+            font-size: 20px;
+        }
+        #return{
+            margin-left: 143px;
+            margin-top: 19px;
+            width: 8%;
+        }
+        #butt{
+        
+        margin-top: 23px;
+       margin-left: 27px;
+    }
+    #cart{
+        font-size: 38px;
+        margin-left: 38px;
+        margin-top: 10px;
+    
+    }
+    select{
+            width: 70px;
+        }
+        #logo a{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <div id="logo"><a href="amazon2.html"><h2>amazon<span>.in</span></h2></a></div>
+    <div id="loc"><span class="bi bi-geo-alt"></span><span>India</span></div>
+    <div class="search"><div class="input-group"><select class="input-group-text"> <option>All</option><option>Mobiles</option><option>Fashion</option><option>Home appliance</option>
+ </select><input type="text" class="form-control " name="search" ><button class="btn btn-warning"><span class=" bi bi-search"></span></button></div></div>
+ <div id="return"><div>Returns </div> <div><b>& Orders</b> </div></div>
+ <a href="sign in.html"><div id="butt"><button class="btn btn-warning">Sign in</button></div></a>
+ <div id="cart"> <span class="bi bi-cart2"></span></div>
+</header>
+  <form action="">
+    <main>
+        <h2>amazon<span>.in</span></h2>
+    </main>
+    <section > 
+      <div class="mb-4"><h3>Sign in</h3></div> 
+       <div>
+        <div id="mail">Email or mobile phone number</div>
+         <div class="textbox"><input type="text" name="mail" autofocus class="form-control"></div>
+       </div>
+       <div class="con"><button class="btn btn-warning mt-3 w-100"><span> Continue</span></button></div>
+      <div class="terms mt-4"><p>By continuing ,you agree to Amazon's <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a></p></div> 
+      <div id="foot">
+        <details>
+        <summary> Need help?</summary>
+        <p><a href="">Forgot Password</a></p>
+        <p><a href="">Other issues with Sign-In</a></p>
+      </details></div>
+    </section>
+    <div class="new"><span> <hr width="160px"> </span><span> New to Amazon?</span><span > <hr width="160px"> </span></div>
+<div id="button"> <button>Create your Amazon account</button></div>
+<div id="line"><hr ></div>
+<div class="footer"><a href=""><span>Conditions of Use</span></a><a href=""><span>Privacy Notice</span></a><a href=""><span>Help</span></a></div>
+<div id="footer2"><p>&copy; 1996-2022, Amazon.com,Inc.or its affiliates</p></div>
+</form>
+</body>
+</html>

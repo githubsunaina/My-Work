@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class=" container-fluid "  >
+<div class=" carousel carousel-dark" data-bs-ride="carousel" id="banner" >
+ <div class=" carousel-inner " >
+
+    <div class=" carousel-item active" data-bs-interval="2000" >
+        <img  class="w-100" src="../../public/images/netflix banner.jpg" alt="" height="300px ">
+    </div>
+    
+    <div class=" carousel-item " data-bs-interval="2000" >
+      <div class=" d-flex justify-content-center align-items-center " style="height: 300px;">
+        <div>
+       <h1>Amazon Special Offers</h1>
+        <button class="btn btn-primary w-100"> Get Started <span class="bi bi-chevron-right"></span></button>
+      </div>
+    </div>
+    </div>
+    
+    <div class=" carousel-item " data-bs-interval="2000" >
+        <img  class="w-100" src="../../public/images/amazonbanner.jpg" alt="" height="300px ">
+    </div>
+</div>
+<div>
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner"> <span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next " data-bs-slide="next" data-bs-target="#banner"><span class="carousel-control-next-icon"></span></button>
+</div>
+<div class=" carousel-indicators">
+<button class="btn btn-dark active" data-bs-target="#banner" data-bs-slide-to="0" ></button>
+<button class="btn btn-dark" data-bs-target="#banner" data-bs-slide-to="1"></button>
+<button class="btn btn-dark"data-bs-target="#banner" data-bs-slide-to="2"></button>
+</div>
+</div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

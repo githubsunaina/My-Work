@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+ul{
+    list-style-type: none;
+}
+    </style>
+</head>
+
+<body class="container-fluid ">
+    <div class="d-flex justify-content-center align-items-center w-100 mt-3" style="height: 300px;">
+        <h1 class="m-4 border border-5 border-danger rounded rounded-4 rounded-pill w-500 text-center">Welcome to
+            Bootstrap</h1>
+        <img class="border m-3 border-info border-5 rounded rounded-3 rounded-circle p-2" src="../images/c1.jpg" alt="">
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col">
+            col 1
+        </div>
+        <div class="col">
+            col 2
+        </div>
+        <div class="col">
+            col 3
+        </div>
+        <div class="col">
+            col 4
+        </div>
+    </div>
+    <br><br>
+    <!-- <div class=" end-0 bottom-0 position-fixed p-4">
+        <ul  >
+            <li class="bi bi-facebook"> </li>
+            <li class="bi bi-twitter"></li>
+            <li class="bi bi-instagram"></li>
+        </ul>
+    </div> -->
+    <dl class="row">
+       <dt class="col-3">Name</dt>
+       <dd class="col-9"> Samsung TV</dd>
+       <dt class="col-3">Price</dt>
+       <dd class="col-9"> 45000.66</dd>
+       <dt class="col-3">Stock</dt>
+       <dd class="col-9"> true </dd>
+    </dl>
+<br><br>
+<h2 class="m-3 bg-danger text-dark" >Register User</h2>
+<dl>
+    <dt>User Name</dt>
+    <dd><input type="text" name="user"></dd>
+    <p class="text-danger "  style="font-weight: bold;">User name required</p>
+    <dt>Email</dt>
+    <dd><input type="text" name="user"></dd>
+    <p class="text-success  " style="font-weight: bold;">Email verified successfully</p>
+</dl>
+<br><br>
+<div>
+<h2 class="m-2 text-center">Alerts</h2>
+<div class=" alert alert-danger alert-dismissible">
+    <h3 class="  alert-title">Delete Record</h3>
+    <p class="alert-text">Record will be deleted permanently.</p>
+    <button class=" btn-close  " data-bs-dismiss="alert"></button>
+    <a href="#" class="alert-link">Help?</a>
+</div>
+<div class=" alert alert-success alert-dismissible">
+    <h3 class="  alert-title">Record Inserted</h3>
+    <p class="alert-text">New record inserted into database.</p>
+    <button class=" btn-close  " data-bs-dismiss="alert"></button>
+    <button class="btn btn-success"><span>Ok</span></button>
+</div>
+</div>
+<br><br>
+<h2>Buttons</h2>
+<div class="mb-4 btn btn-group">
+    <button class="btn btn-primary">&laquo;</button>
+    <button class="btn btn-warning">1</button>
+    <button  class="btn btn-warning">2</button>
+    <button class="btn btn-warning">3</button>
+    <button class="btn btn-primary">&raquo;</button>
+</div>
+<h2>Group Vertical</h2>
+<div class="btn btn-group-vertical">
+    <button class="btn btn-primary">Home</button>
+    <button  class="btn btn-warning">About</button>
+    <button class="btn btn-dark">Contact</button>
+    <button  class="btn btn-danger">Gallery</button>
+</div>
+<h2>Contextual</h2>
+<div>
+<button class="  btn btn-success  ">Insert</button>
+<button class=" btn btn-danger">Delete</button>
+<button class="btn btn-warning">Update</button>
+</div>
+<div class="mt-4">
+<button class="  btn btn-outline-danger  ">Insert</button>
+<button class=" btn btn-outline-success">Delete</button>
+<button class="btn btn-outline-warning">Update</button>
+</div >
+<h2>Button Toolbar</h2>
+<div class="bg-danger d-flex justify-content-between">
+    <div class="text-light mt-2 ms-5 " style="font-size: 20px;">Shopper.</div>
+    <div class="ms-3"><button class="btn btn-danger">Home</button>
+        <button class="btn btn-danger">About</button>
+        <button class="btn btn-danger">Contact</button></div>
+    <div class="mt-1" ><span class="bi bi-person-fill text-light me-4"></span><span class="bi bi-search text-light me-5"></span></div>
+</div>
+<br><br>
+<div>
+    <button class="btn btn-primary position-relative">
+        <span class="bi bi-bell"></span> <span>Notifications</span>
+        <span class="badge badge-circle text-white bg-danger position-absolute">4</span>
+    </button>
+</div>
+<h1>Table of Contents</h1>
+<div class="w-100  d-flex justify-content-between p-2 mb-2">
+    <span class=" ">HTML Introduction</span>
+<span class=" badge badge-circle text-light bg-dark">1</span>
+</div>
+<div class="w-100 bg-dark text-light d-flex justify-content-between p-2  mb-2">
+    <span class=" "> Elements in HTML </span>
+<span class=" badge badge-circle text-dark bg-light">1</span>
+</div>
+<div class="w-100 bg-dark text-light d-flex justify-content-between p-2  mb-2">
+    <span class=" ">Body Section of HTML</span>
+<span class=" badge badge-circle text-dark bg-light">1</span>
+</div>
+<br><br>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

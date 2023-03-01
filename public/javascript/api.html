@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        
+    function btn_clk(){
+        fetch("../../data/products.json")
+        .then(function(res){
+            return res.json();
+        })
+        .then (function(products){
+            for(var prod of products){
+                var trow=document.createElement("tr");
+                var tname=document.createElement("td");
+                var tprice=document.createElement("td");
+                var imgprod=document.createElement("img");
+                tname.innerHTML=prod.Name;
+                tprice.innerHTML=prod.Price;
+                imgprod.src=prod.image;
+                imgprod.height=70;
+                imgprod.width70;
+                trow.appendChild(tname);
+                trow.appendChild(tprice);
+                trow.appendChild(imgprod);
+                document.querySelector("#table_body").appendChild(trow);
+            }
+        })
+    }
+    
+    </script>
+</head>
+<body>
+<h2>Fetch API</h2>
+<button class="btn btn-primary" onclick="btn_clk()">Fetch data</button>
+<div>
+    <table border="1" width="100%" class="table">
+  <thead>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>
+            image
+        </th>
+    </tr>
+  </thead>
+  <tbody id="table_body">
+  
+  </tbody>
+    </table>
+</div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

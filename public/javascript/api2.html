@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        header{
+            font-size: 23px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #clock{
+            position: relative;
+           
+            width: 12rem;
+        }
+    </style>
+    <script>
+        function timeload(){
+
+        
+        var time=new Date();
+       document.querySelector("#lbltime").innerHTML=time.toLocaleTimeString();
+        }
+        function load(){
+            setInterval(timeload,1000 );
+            date_show();
+        }
+        function date_show(){
+            var weekdays=["sunday","monday","tuesday","wednesday","thrusday","friday","saturday"];
+            var monthname=["jan","feb","march","april","may","june","july","aug","sept","oct","nov","dec"];
+            var date=new Date();
+            var weekday=date.getDay();
+           var day=date.getDate();
+           var month=date.getMonth();
+           var year=date.getFullYear();
+            var hours=date.getHours();
+          var icon=document.querySelector(".lblicon");
+            if(hours>=0 && hours<=12){
+            document.querySelector(".lblwish").innerHTML="Good Morning";
+            icon.className="bi bi-sun";
+           }
+           else if(hours>13 && hours<23){
+            document.querySelector(".lblwish").innerHTML="Good evening";
+            icon.className="bi bi-sun-fill";
+           }
+
+           document.querySelector(".dateshow").innerHTML=`${weekdays[weekday]} , ${day} ${monthname[month]} ${year}`;
+        }
+       
+        
+    </script>
+</head>
+<body class=" container-fluid" onload="load()">
+  <header class=" bg-danger text-light w-100 ">
+     <div class="m-2 p-2" ><span class="bi bi-cart3"></span> Shopper.</div>
+     <div class="m-2 p-2"><span class="lblicon me-2"></span><span class="lblwish"></span></div>
+     <div class="m-2 p-2"><span class="bi bi-calendar me-2"></span><span class="dateshow"></span></div>
+ 
+     <div id="clock" class="m-2 p-2"><span class="bi bi-clock-fill me-2"></span><span id="lbltime" ></span></div>
+  </header>
+  <br><br>
+  
+
+ 
+
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <script>
+   var name="Samsung TV";
+   var price="25000";
+   var mfd=new Date("2023/02/21 ,08:54:52");
+   document.writeln(`Name = ${name} <br> Price = ${price} <br> Manufactured = ${mfd}`); 
+</script> -->

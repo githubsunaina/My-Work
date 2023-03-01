@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            height: 70px;
+            background-color: rgb(21, 6, 75);
+            color: rgb(240, 233, 233);
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        section {
+            height: 250px;
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+        }
+
+        footer {
+            height: 300px;
+            background-color: rgb(21, 6, 75);
+            color: rgb(252, 245, 245);
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+
+        .left_footer {
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+            margin-left: 35px;
+        }
+
+        li {
+            list-style: none;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        h5 {
+            margin-bottom: 18px;
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .list {
+            padding-left: 10px;
+        }
+
+        .right_footer {
+            display: grid;
+            grid-template-columns: 3fr 3fr;
+            border-left: 1.5px solid white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .space {
+            padding-left: 50px;
+            margin-top: -30px;
+        }
+
+        /*        .nav-area span {
+            padding-right: 17px;
+           
+        }
+        .nav-area{
+            margin-left: 726px;
+            padding-top: 50px;
+        }
+        span:hover{
+            color: rgb(83, 80, 80);
+           background-color: rgb(247, 244, 244);
+           border-radius: 5px;
+        } */
+        .header-center span {
+            padding-right: 20px;
+            font-size: 20px;
+
+        }
+
+        .header-center span:hover {
+            background-color: yellow;
+            color: red;
+            border-radius: 5px;
+        }
+
+        .header-right span {
+            padding-right: 20px;
+            font-size: 20px;
+        }
+
+        .header-left span {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 20px;
+
+        }
+
+        .header-center {
+            margin-top: 35px;
+        }
+
+        .header-left {
+            margin-top: 35px;
+        }
+
+        .header-right {
+            margin-top: 35px;
+        }
+        main{
+            font-size: 20px;
+margin-top: 10px;
+        }
+        main div{
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            width: 135px;
+            padding-left: 10px;
+          padding-top: 7px;
+height: 27px;
+        }
+        main div:hover{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <span>Shopper.</span>
+        </div>
+        <div class="header-center">
+            <nav>
+                <span>HOME</span>
+                <span>SHOP</span>
+                <span>CATALOG</span>
+                <span>BLOG</span>
+                <span>PAGES</span>
+            </nav>
+        </div>
+        <div class="header-right">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-person"></span>
+        </div>
+    </header>
+    <section>
+
+        <main>
+            <nav class="navbar">
+                <div>HOME</div>
+                <div>SHOP</div>
+                <div>CATALOG</div>
+                <div>BLOG</div>
+                <div>PAGES</div>
+            </nav>
+        </main>
+        <aside>
+            <h3>aside</h3>
+
+        </aside>
+    </section>
+    <footer>
+        <div class="left_footer">
+            <div>
+                <h5>ABOUT </h5>
+                <div class="list">
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Flipkart Stories</li>
+                    <li>Press</li>
+                    <li>Flipkart Wholesale</li>
+                    <li>Corporate Information</li>
+                </div>
+            </div>
+            <div>
+                <h5>HELP</h5>
+                <div class="list">
+                    <li>Payment</li>
+                    <li>Shipping</li>
+                    <li>Cancellation &</li>
+                    <li>Returns</li>
+                    <li>FAQ</li>
+                    <li>Report</li>
+                    <li>Infringement</li>
+                </div>
+            </div>
+            <div>
+                <h5> POLICY </h5>
+                <div class="list">
+                    <li>Return Policy</li>
+                    <li>Terms of Use</li>
+                    <li>Security</li>
+                    <li>Privacy</li>
+                    <li>Sitemap</li>
+                    <li>EPR Compliance</li>
+                </div>
+            </div>
+            <div>
+                <h5>SOCIAL </h5>
+                <div class="list">
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </div>
+            </div>
+        </div>
+        <div class="right_footer">
+            <div class="space">
+                <h5>Mail Us </h5>
+                <div class="list">
+                    <li>Flipkart Internet Private Limited,</li>
+
+                    <li>Buildings Alyssa, Begonia &</li>
+
+                    <li>Clove Embassy Tech Village,</li>
+
+                    <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+
+                    <li>Bengaluru, 560103,</li>
+
+                    <li>Karnataka, India</li>
+                </div>
+            </div>
+            <div class="space">
+                <h5>Registered Office Address: </h5>
+                <div class="list">
+                    <li> Flipkart Internet Private Limited,</li>
+
+                    <li>Buildings Alyssa, Begonia &</li>
+
+                    <li>Clove Embassy Tech Village,</li>
+
+                    <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+
+                    <li>Bengaluru, 560103,</li>
+
+                    <li>Karnataka, India</li>
+
+                    <li>CIN : U51109KA2012PTC066107</li>
+
+                    <li>Telephone: 044-45614700</li>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outSHINE</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../src/outshine.css">
+    <style>
+        body{
+            background: none;
+        }
+    </style>
+</head>
+<body  class=" container-fluid ">
+    <div id="header_container"class="bg-black" >
+        <header class="w-100 text-white container-fluid" id="header_contain">
+            <div id="logo"><a href="#">
+                    <h2>outSHINE</h2>
+                </a></div>
+            <nav class="nav_bar">
+                <ul class=" list-unstyled ">
+                    <li class="me-4"><a href="index.html">Home</a></li>
+                    <li class="me-4" ><a href="About.html">About</a></li>
+                    <li class="me-4"><a href="#">Services</a></li>
+                    <li class="me-4"><a href="#">Work</a></li>
+                    <li class="me-4"><a href="#">FAQ</a></li>
+                    <li class="me-4"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sign_btn"><button>Sign In</button></div>
+        </header>
+    </div>
+    <div class="contact_section">
+       
+            <div class="contact-in text-center">CONTACT</div> 
+           <div class=" contact-head text-center text-black"><h2>Contact  <span> Us</span></h2></div>
+           <div class="contact-body  row">
+            <div class="col-4">
+              <div class="contact-detail">
+                <div class="row mb-3"><h3><span class=" bi bi-geo-alt me-3  text-center "></span> Location:</h3>
+                    <p>A103 Adam Street , India</p></div>
+                    <div class="row mb-3"><h3><span class=" bi bi-envelope text-center me-3"></span> Email:</h3><p>outshine@gmail.com</p></div>
+                    <div class="row "><h3><span class=" bi bi-phone text-center me-3"></span> Call:</h3><p>+91 9876543321</p></div>
+              </div>
+            </div>
+            <div class="col-8 ">
+              <div class="contact-msg">
+                
+                <div class="row m-3">
+                    <div class="col  "><input type="text" class="form-control " id="u_mail"  name="uname" placeholder="Your Name"></div>
+                    <div class="col"><input type="text" class="form-control" id="u_mail2"name="uemail" placeholder="Your Email"></div>
+                </div>
+                <div class="row m-3"><input type="text" id="u_sub" class="form-control" name="subject" placeholder="Subject"></div>
+
+                <div class="row m-3">
+                    <textarea name="msg" class="form-control"id="u_msg"  cols="10" rows="5" placeholder="Message"></textarea>
+                </div>
+                <button class="form-control " id="btn_msg">Send Message</button>
+            </div>
+            </div>
+           </div>
+        
+    </div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

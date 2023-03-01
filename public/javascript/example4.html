@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+
+     function detail(){
+        var num=document.querySelector("#card_no").value;
+           var imgg=document.querySelector("#image");
+
+         if(num.startsWith("5555")){
+            
+         imgg.src="../../public/outshine.html/images/slide6.png";
+         imgg.height="50";
+         imgg.width="80";
+       
+
+         }
+           else if(num.startsWith("4444")){
+            
+            imgg.src="../../public/outshine.html/images/slide4.jpg";
+            imgg.height="50";
+            imgg.width="80";
+          
+   
+            }
+         else{
+           imgg.src="";
+         }
+     }
+     function checkmail(){
+        var email=document.querySelector("#mail").value;
+        if(email.endsWith("@gmail.com")){
+            document.querySelector("#para").innerHTML="";
+        }
+        else{
+            document.querySelector("#para").innerHTML="Invalid Email - Only outlook account allowed".fontcolor("red");
+        }
+     }
+     function password(){
+       var para3=document.querySelector("#pass").value;
+   var meter=document.querySelector("#meter");
+       
+       var exp=/(?=.*[A-Z])\w{4,10}/;
+       if(para3.match(exp)){
+        document.querySelector("#para2").innerHTML="Strong Password".fontcolor("green");
+      
+        meter.value=100;
+        
+       }
+       else {
+        if((para3.length)<4){
+            document.querySelector("#para2").innerHTML="Poor Password".fontcolor("yellow");
+            meter.value=20;
+            
+       }
+        else{
+        document.querySelector("#para2").innerHTML="Week Password".fontcolor("red");
+        meter.value=60;
+       
+       }
+     }
+    }
+function verifyid(){
+  var userr=document.querySelector("#uid").value;
+  if(userr=="Sunaina"){
+    document.querySelector("#para4").innerHTML="user verified";
+  }
+  else{
+    document.querySelector("#para4").innerHTML="Invalid User Id";
+  }
+}
+    </script>
+</head>
+<body>
+    <h2>Payment Details</h2>
+    <h6>Credit Card</h6>
+   <div class="input-group w-50">
+    <input type="text" id="card_no" onkeyup="detail()" class="form-control">
+     <img id="image" alt="Invalid" class="input-group-text w-25" >
+   </div> <br>
+     <h5>Your Outlook</h5>
+     <input type="text" class="form-control w-50" onkeyup="checkmail()" id="mail">
+     <br>
+     <p id="para"></p>
+      <br>
+      <div>
+        <h2>Password</h2>
+        <input type="password" class="form-control w-25" onkeyup="password()" id="pass">
+        <br>
+       
+           <meter min="1" max="100" value="1" id="meter" class="w-100 "></meter>
+       
+        <br>
+        <p id="para2">
+
+        </p>
+      </div>
+<div>
+  <h6>User Id</h6>
+  <input type="text" onkeyup="verifyid()" id="uid">
+  <br>
+  <p id="para4"></p>
+</div>
+
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

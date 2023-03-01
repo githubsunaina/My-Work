@@ -1,0 +1,23 @@
+@mixin textcolor($bgcolor,$border,$padding,$color){
+    .container{
+        padding: $padding;
+        background-color: $bgcolor;
+        border:$border; 
+       }
+       h1{
+        padding:  $padding;
+        color: $color;
+        border:$border; 
+    }
+    p{
+       
+        padding:  $padding;
+        color: $color;
+    }
+}
+@include textcolor(rgb(127, 253, 133),rgb(4, 94, 39) ,10px ,rgb(2, 53, 17) );
+ @for $i from 1 to 5{
+    .imgsize-#{$i}{
+        margin-left: $i*100px;
+    }
+}

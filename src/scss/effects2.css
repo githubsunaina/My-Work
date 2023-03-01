@@ -1,0 +1,34 @@
+.container {
+  padding: 10px;
+  background-color: rgb(127, 253, 133);
+  border: rgb(4, 94, 39);
+}
+
+h1 {
+  padding: 10px;
+  color: rgb(2, 53, 17);
+  border: rgb(4, 94, 39);
+}
+
+p {
+  padding: 10px;
+  color: rgb(2, 53, 17);
+}
+
+.imgsize-1 {
+  margin-left: 100px;
+}
+
+.imgsize-2 {
+  margin-left: 200px;
+}
+
+.imgsize-3 {
+  margin-left: 300px;
+}
+
+.imgsize-4 {
+  margin-left: 400px;
+}
+
+/*# sourceMappingURL=effects2.css.map */

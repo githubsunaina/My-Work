@@ -1,0 +1,221 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "Title": "Candle",
+      "Price": "60.23",
+      "image": "../../public/outshine.html/images/candle.jpg",
+      "category": "Home Decor"
+    },
+    {
+      "id": 3,
+      "Title": "Candle",
+      "Price": "200.90",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/candle_holder.jpg"
+    },
+    {
+      "id": 4,
+      "Title": "Candle",
+      "Price": "60.23",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/candle_holder2.PNG"
+    },
+    {
+      "id": 5,
+      "Title": "CD",
+      "Price": "60.23",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/cd_usage.PNG"
+    },
+    {
+      "id": 6,
+      "Title": "Coconut Pot",
+      "Price": "60.23",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/coconut_poy.jpg"
+    },
+    {
+      "id": 7,
+      "Title": "Creative Bottle",
+      "Price": "60.23",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/creative_bottle.jpg"
+    },
+    {
+      "id": 8,
+      "Title": "Creative Bottle Like Vase",
+      "Price": "290",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/creative_bottle.PNG"
+    },
+    {
+      "id": 10,
+      "Title": "Garden Marks",
+      "Price": "100",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/garden_marks.PNG"
+    },
+    {
+      "id": 11,
+      "Title": "Hanging Lamp with cone metal",
+      "Price": "588",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/hanging_lamp.PNG"
+    },
+    {
+      "id": 12,
+      "Title": "Hanging Lamp with set of 3",
+      "Price": "699",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/hanging_lamp2.jpg"
+    },
+    {
+      "id": 13,
+      "Title": "Drop shape Hanging Lamp",
+      "Price": "600",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/hanging_lamp3.jpg"
+    },
+    {
+      "id": 14,
+      "Title": "Hanging Lamp with black metal",
+      "Price": "800",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/hanging_lamp4.jpg"
+    },
+    {
+      "id": 15,
+      "Title": " Frameless Hanging lamp ",
+      "Price": "300.00",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/hanging_lamp5.PNG"
+    },
+    {
+      "id": 16,
+      "Title": "Sofa for Drawing room",
+      "Price": "600.23",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/home_decor.jpg"
+    },
+    {
+      "id": 17,
+      "Title": "candle",
+      "Price": "60.23",
+      "category": "Accessories",
+      "image": "../../public/outshine.html/images/key_holder.jpg"
+    },
+    {
+      "id": 18,
+      "Title": "candle",
+      "Price": "60.23",
+      "category": "Accessories",
+      "image": "../../public/outshine.html/images/key_holder2.jpg"
+    },
+    {
+      "id": 19,
+      "Title": "candle",
+      "Price": "60.23",
+      "category": "Accessories",
+      "image": "../../public/outshine.html/images/key_holder3.PNG"
+    },
+    {
+      "id": 20,
+      "Title": "candle",
+      "Price": "60.23",
+      "category": "Accessories",
+      "image": "../../public/outshine.html/images/key_holder.jpg"
+    },
+    {
+      "id": 21,
+      "Title": "candle",
+      "Price": "60.23",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/lamp.jpg"
+    },
+    {
+      "id": 22,
+      "Title": "candle",
+      "Price": "60.23",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/lamp2.jpg"
+    },
+    {
+      "id": 23,
+      "Title": "candle",
+      "Price": "60.23",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/lamp3.jpg"
+    },
+    {
+      "id": 24,
+      "Title": "candle",
+      "Price": "60.23",
+      "category": "Accessories",
+      "image": "../../public/outshine.html/images/key_holder2.jpg"
+    },
+    {
+      "id": 25,
+      "Title": "candle",
+      "Price": "60.23",
+      "category": "Accessories",
+      "image": "../../public/outshine.html/images/key_holder.jpg"
+    },
+    {
+      "id": 2,
+      "Title": "Candle",
+      "Price": "100.23",
+      "category": "Home Decor",
+      "image": "../../public/outshine.html/images/candle_holder.jpg"
+    }
+  ],
+  "categories": [
+    "Home Decor",
+    "Accessories",
+    "Men's Wear"
+  ],
+  "olditems": [
+    {
+      "id": 1,
+      "Title": "Old Cycle",
+      "Price": "600.00",
+      "category": "Others",
+      "image": "../../public/outshine.html/images/old-cycle.jpg"
+    },
+    {
+      "id": 2,
+      "Title": "Old Bottle",
+      "Price": "50.00",
+      "category": "Glass",
+      "image": "../../public/outshine.html/images/old_bottle.jpg"
+    },
+    {
+      "id": 3,
+      "Title": "Old TV",
+      "Price": "1000.00",
+      "category": "Others",
+      "image": "../../public/outshine.html/images/old_tv.jpg"
+    },
+    {
+      "id": 4,
+      "Title": "Rusty Car",
+      "Price": "3000.00",
+      "category": "Others",
+      "image": "../../public/outshine.html/images/rusty_car.jpg"
+    },
+    {
+      "id": 5,
+      "Title": "Rusty Tyre",
+      "Price": "300.00",
+      "category": "Others",
+      "image": "../../public/outshine.html/images/rusty_tyre.jpg"
+    },
+    {
+      "id": 6,
+      "Title": "Wadrobe",
+      "Price": "900.00",
+      "category": "Furniture",
+      "image": "../../public/outshine.html/images/wadrobe.PNG"
+    }
+  ]
+}

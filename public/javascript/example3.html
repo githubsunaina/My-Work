@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function image() {
+            pic = document.createElement("img");
+            pic.src = "../../public/Capture.PNG";
+            pic.height = "200";
+            pic.width = "200";
+            pic.border = "1";
+            document.querySelector("#im").appendChild(pic);
+            list = document.createElement("li");
+            list.innerHTML = "HTML";
+            document.querySelector("#list-item").appendChild(list);
+            opt = document.createElement("option");
+            opt.text = "Delhi";
+            opt.value="Delhi";
+            opt.text = "hyd";
+            opt.value="hyd";
+            document.querySelector("#sl").appendChild(opt);
+        }
+function pro(){
+   user= prompt("Enter name");
+   document.querySelector("#para").innerHTML= ( `Hello ! John <br> Hii"${user} What are you doing today? `);
+}
+    </script>
+</head>
+
+<body onload="pro()">
+    <!-- <button class="m-3 btn btn-primary" onclick="image()">load image</button>
+    <div id="im">
+
+    </div>
+    <ul id="list-item"></ul>
+    <select id="sl"></select> -->
+    <!-- <dl id="user">
+        <dt>Enter name</dt>
+        <dd><input type="text"></dd>
+    </dl> -->
+    <p id="para"></p>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

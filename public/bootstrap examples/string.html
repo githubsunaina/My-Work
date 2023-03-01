@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ /*        var username=prompt(document.querySelector("user").value);
+        var age=prompt(parseInt(document.querySelector("age_no").value)); */
+      //var username= prompt("Enter name");
+      // var age=parseInt(prompt("Enter age"));
+    // document.querySelector("p").value=  document.writeln("Hello !"+username+"you will be"+age+"next year"); 
+        //document.querySelector("p").value=  document.writeln(`Hello! ${username}you will be ${age}next year`);
+       //document.writeln(`D:\\images\\shoe.jpg`);
+function username()
+{
+   // var u_name=document.querySelector("#name").value;
+   //document.querySelector("#name").value=u_name.toUpperCase();
+  var u_name=document.querySelector("#name").value;
+  //document.querySelector("#name").value=u_name.toUpperCase();
+  if(u_name.charCodeAt(0)>=65 && u_name.charCodeAt(0)<=90){
+ //document.querySelector("#para").innerHTML="Name too short min 4 chars required....".fontcolor("red");
+    // document.querySelector("#para").innerHTML="name must start with uppercase letter".fontcolor("red");
+    document.querySelector("#para").innerHTML="";
+  }
+ else{
+ document.querySelector("#para").innerHTML="name must be in uppercase".fontcolor("red");
+}  
+ 
+
+
+
+}
+    </script>
+</head>
+<body>
+    <!-- <dl>
+        <dt>Enter name</dt>
+        <dd><input type="text" class="input_name" id="user"></dd><br>
+        <dd><input type="text" class="input_age" id="age_no"></dd><br>
+        <dd><p ></p></dd>
+    </dl> -->
+<!-- <p></p> -->
+<dl><dt>User NAME</dt>
+<!-- <dd><input type="text" id="name" onblur="username()"></dd> -->
+<dd><input type="text" id="name" onkeyup="username()"></dd><br>
+<p id="para"></p>
+</dl>
+
+    
+</body>
+</html>

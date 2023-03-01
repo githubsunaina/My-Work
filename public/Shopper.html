@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper.</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        .head {
+            height: 40px;
+            background-color: rgb(228, 225, 225);
+            padding: 0;
+            margin-top: 0px;
+            display: flex;
+        }
+
+        .scroll {
+            height: 3px;
+            background-color: rgb(98, 24, 168);
+            margin-top: 3px;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+
+
+        #left-head {
+            font-size: 8px;
+            margin-top: 15px;
+            margin-left: 97px;
+            color: rgb(14, 12, 12);
+            font-family: arial;
+            position: absolute;
+        }
+
+        select {
+            background-color: rgb(228, 225, 225);
+            border: none;
+        }
+
+        .mid-head1 {
+            margin-top: 11px;
+            margin-left: 265px;
+            position: absolute;
+            font-family: arial;
+        }
+
+        .mid-head2 {
+            margin-top: 11px;
+            margin-left: 921px;
+            position: absolute;
+            font-family: arial;
+        }
+
+        .mid-head2 span {
+            padding: 10px;
+        }
+
+        .right-head {
+            margin-top: 11px;
+            margin-left: 1170px;
+            position: absolute;
+        }
+
+        .right-head span {
+            padding: 8px;
+            color: rgb(143, 132, 160);
+        }
+
+        .icon span {
+            margin-top: 12px;
+            margin-left: 76px;
+            position: absolute;
+        }
+
+        .header-part2 {
+            height: 40px;
+            color: rgb(233, 231, 231);
+            background-color: rgb(3, 3, 3);
+            text-align: center;
+            font-family: arial;
+            position: absolute;
+            width: 100%;
+
+        }
+
+        .header-part22 {
+            margin-top: 15px;
+            color: rgb(233, 189, 68);
+            margin-left: 70px;
+        }
+
+        #content {
+            color: white;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            height: 600px;
+            margin: 0;
+            margin-top: 50px;
+            background-color: aquamarine;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            height: 75px;
+            width: 100%;
+            background-color: rgb(252, 248, 248);
+        }
+
+        /*     .header-part3{
+        height: 450px;
+        color: rgb(233, 231, 231);
+        background-color: rgb(235, 26, 26);
+        margin: 0;
+        display: ;
+        margin-top: 10px;
+      } */
+        .left-header {
+            font-size: 29px;
+            font-weight: bold;
+            margin-left: 93px;
+            margin-top: 15px;
+        }
+
+        .center-header {
+            font-size: 12px;
+            margin-top: 27px;
+            font-family: arial;
+            position: absolute;
+            margin-left: 476px;
+
+        }
+
+        .center-header span {
+            margin-right: 29px;
+            padding: 5px;
+
+        }
+
+        .center-header span:hover {
+            background-color: brown;
+            color: antiquewhite;
+        }
+
+        .right-header {
+
+            margin-top: 30px;
+            position: absolute;
+            margin-left: 1151px;
+        }
+
+        .right-header span {
+
+            margin-right: 15px;
+        }
+
+        section {
+            display: grid;
+
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+
+        /*   .sec1 img {
+            margin: 0;
+            width: 450px;
+            height: 600px;
+        } */
+        .sec1 {
+            background-image: url("images/cover-1.jpg");
+            background-size: cover;
+
+        }
+
+        .sec2 {
+            background-image: url("images/cover-2.jpg");
+            background-size: cover;
+
+        }
+
+        .sec1:hover {
+            border: 3px solid black;
+        }
+
+        /*   .sec2 img {
+            margin: 0;
+            width: 450px;
+            height: 600px;
+        } */
+
+        .sec2:hover {
+            border: 3px solid black;
+        }
+
+        /*         .sec3 img {
+            margin: 0;
+            width: 450px;
+            height: 600px;
+        }
+ */
+        .sec3 {
+
+            background-image: url("images/cover-3.jpg");
+            background-size: cover;
+
+
+        }
+
+        .sec3:hover {
+            border: 3px solid black;
+        }
+
+        footer {
+            background-color: rgb(27, 26, 26);
+            height: 500px;
+            margin-top: 4px;
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+        }
+
+        .social-bar {
+            background-color: rgb(14, 13, 14);
+            color: aliceblue;
+            width: 31px;
+            height: 92px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .social-bar div {
+            padding: 4px;
+            size: 30px;
+            font-size: 20px;
+        }
+
+        .foot-div1 {
+            margin-top: 277px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: arial;
+            color: white;
+            text-align: center;
+        }
+
+        .foot-div11 {
+            color: gray;
+            margin-left: 117px;
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        .foot-div11 span {
+            margin: 3px;
+        }
+
+        .foot-div2 {
+            color: white;
+            font-size: 17px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: 85px;
+        }
+
+        .foot-div22 {
+
+            text-align: center;
+
+            margin-top: 42px;
+        }
+
+        .input-text {
+            color: rgb(255, 255, 255);
+            background-color: rgb(48, 48, 48);
+            border: none;
+            height: 48px;
+            width: 66%;
+            font-size: 11px;
+            padding-right: 20px;
+            margin-right: 17px;
+
+        }
+
+        .input-subscribe {
+            color: white;
+            background-color: gray;
+            border: none;
+            height: 48px;
+            width: 93px;
+
+
+            font-size: 13px;
+        }
+
+        .foot-div3 {
+            font-size: 10.5px;
+            color: white;
+            margin-top: 277px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 28px;
+        }
+
+        .foot-div33 {
+            color: white;
+            margin-top: 13px;
+
+            color: rgb(150, 148, 148);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 28px;
+
+        }
+
+        .foot-div33 ul {
+            list-style: none;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        .foot-div23 {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+        }
+
+        .foot-div231 {
+            font-size: 10.5px;
+            color: white;
+            margin-top: 81px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 28px;
+        }
+
+        .foot-div232 {
+            color: white;
+            margin-top: 13px;
+
+            color: rgb(150, 148, 148);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 28px;
+
+        }
+
+        .foot-div232 ul {
+            list-style: none;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        .foot-div233 {
+            font-size: 10.5px;
+            color: white;
+            margin-top: 81px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 28px;
+        }
+
+        .foot-div234 {
+            color: white;
+            margin-top: 13px;
+
+            color: rgb(150, 148, 148);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 28px;
+
+        }
+
+        .foot-div234 ul {
+            list-style: none;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        .foot-div235 {
+            font-size: 10.5px;
+            color: white;
+            margin-top: 81px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 28px;
+        }
+
+        .foot-div236 {
+            color: white;
+            margin-top: 13px;
+
+            color: rgb(150, 148, 148);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 28px;
+
+        }
+
+        .foot-div236 ul {
+            list-style: none;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        .lower-foot {
+            height: 0.1px;
+            background-color: rgb(85, 84, 84);
+            width: 400%;
+
+        }
+
+        .lower-foot2 {
+            color: rgb(104, 103, 103);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 10px;
+            margin-top: 20px;
+            margin-left: -213px;
+        }
+
+        .button {
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        
+            display: flex;
+            margin-top: 259px;
+            margin-left: 175px;
+            height: 39px;
+        }
+        .button2 {
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            
+            display: flex;
+            margin-top: 259px;
+            margin-left: 190px;
+            height: 39px;
+        }
+        .button3 {
+            color: white;
+            font-family: arial;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 195px;
+            display: flex;
+            margin-top: 259px;
+            height: 39px;
+        }
+        .button-next {
+            background-color: white;
+            color: black;
+            height: 39px;
+            width: 139px;
+            font-size: 13px;
+            font-family: arial;
+            margin-left: 158px;
+            margin-top: 196px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .article{
+            height: 70px;
+     background-color: white;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin-left: 118px;
+    margin-right: 20px;
+    width: 1106px;
+       
+        }
+        .article1{
+            height: 40px;
+            
+        }
+        .left-header a{
+            text-decoration: none;
+            color: black;
+        }
+        .mid-head2 a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll"></div>
+    <div class="head">
+        <div class="icon"><span class="bi bi-truck"></span></div>
+        <div id="left-head"> FREE SHIPPING WORLDWIDE</div>
+        <div class="mid-head1">
+            <select>
+                <option>United States</option>
+                <option>Canada</option>
+                <option>Germany</option>
+            </select>
+            <select>
+                <option> USD</option>
+            </select>
+            <select>
+                <option>English</option>
+            </select>
+        </div>
+
+        <div class="mid-head2"><span>Shipping</span>
+            <span>FAQ</span>
+            <a href="register.html"><span>Register</span></a>
+        </div>
+        <div class="right-head">
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-twitter"></span>
+            <span class="bi bi-instagram"></span>
+            <span class="bi bi-youtube"></span>
+        </div>
+    </div>
+
+    <!-- ---------header---------- -->
+
+    <header>
+
+        <div class="left-header">
+            <a href="Shopper.html"><span >Shopper.</span></a>
+        </div>
+        <div class="center-header">
+            <nav>
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Docs</span>
+            </nav>
+        </div>
+        <div class="right-header">
+            <span class="bi bi-search"></span> <span class="bi bi-person">
+            </span><span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+    </header>
+
+
+    <!-- ---------header---------- -->
+
+    <div class="header-part2">
+        <div class="header-part22">
+            <span class="bi bi-lightning-charge-fill"></span><span id="content"> HAPPY HOLIDAY DEALS ON EVERYTHING
+            </span> <span class="bi bi-lightning-charge-fill"></span>
+        </div>
+    </div>
+    <!---section....................................................-->
+
+    <section>
+        <div class="sec1">
+            <div class="button">Women</div>
+            <div class="button-next">Shop Women<span class="bi bi-chevron-right"></span> </div>
+        </div>
+        <div class="sec2">
+            <div class="button2">Men</div>
+            <div class="button-next">Shop Men<span class="bi bi-chevron-right"></span> </div>
+        </div>
+        <div class="sec3">
+            <div class="button3">Kids</div>
+            <div class="button-next">Shop Kids<span class="bi bi-chevron-right"></span> </div>
+        </div>
+        <nav class="social-bar">
+            <div class="bi bi-facebook"></div>
+            <div class="bi bi-twitter"></div>
+            <div class="bi bi-instagram"></div>
+
+        </nav>
+    </section>
+
+    <!---section....................................................-->
+   <div class="article">
+
+   </div>
+   <div class="article1"></div>
+   
+   
+   
+   
+   
+   
+   
+    <footer>
+        <div>
+            <div class="foot-div1">
+                Shopper.
+            </div>
+            <div class="foot-div11">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-youtube"></span>
+            </div>
+        </div>
+        <div>
+            <h5 class="foot-div2">Want style Ideas and Treats?</h5>
+            <div class="foot-div22">
+                <input type="text" class="input-text" placeholder="Enter Email *">
+                <button class="input-subscribe">Subscribe</button>
+            </div>
+            <div class="foot-div23">
+                <div>
+                    <div class="foot-div231">
+                        SUPPORT
+                    </div>
+                    <div class="foot-div232">
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>FAQs</li>
+                            <li>Size Guide</li>
+                            <li>Shipping & Returns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="foot-div233">
+                        SHOP
+                    </div>
+                    <div class="foot-div234">
+                        <ul>
+                            <li> Men's Shopping</li>
+                            <li>Women's Shopping</li>
+                            <li>Kids' Shopping</li>
+                            <li>Discounts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="foot-div235">
+                        COMPANY
+                    </div>
+                    <div class="foot-div236">
+                        <ul>
+
+                            <li>Our Story</li>
+                            <li>Careers</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy & Cookie policy</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        <div>
+            <div class="foot-div3">
+                CONTACT
+            </div>
+            <div class="foot-div33">
+                <ul>
+                    <li>1-202-555-0105</li>
+                    <li>1-202-555-0106</li>
+                    <li>help@shopper.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="lower-foot">
+
+        </div>
+        <div class="lower-foot2">&copy; 2022 All rights reserved. Designed by Sunaina.</div>
+    </footer>
+
+</body>
+
+</html>

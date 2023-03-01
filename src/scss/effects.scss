@@ -1,0 +1,75 @@
+$bgcolor: yellow;
+
+    @if $bgcolor==red{
+   .container{
+        padding: 10px;
+        background-color: rgb(245, 119, 119);
+        border:2px solid rgb(70, 2, 2); 
+       }
+       h1{
+        padding: 10px;
+        color: rgb(73, 2, 2);
+        border: 2px solid red;
+    }
+    p{
+        padding: 5px;
+        color: rgb(37, 1, 1);
+    }
+}
+@else if $bgcolor==green{
+    .container{
+        padding: 10px;
+        background-color: rgb(119, 245, 136);
+        border:2px solid rgb(2, 70, 8); 
+       }
+       h1{
+        padding: 10px;
+        color: rgb(8, 56, 2);
+        border: 2px solid rgb(57, 218, 8);
+    }
+    p{
+        padding: 5px;
+        color: rgb(1, 58, 1);
+    }
+}
+@else if $bgcolor==blue{
+    .container{
+        padding: 10px;
+        background-color: rgb(124, 109, 255);
+        border:2px solid rgb(2, 3, 70); 
+       }
+       h1{
+        padding: 10px;
+        color: rgb(7, 2, 56);
+        border: 2px solid rgb(11, 4, 114);
+    }
+    p{
+        padding: 5px;
+        color: rgb(1, 6, 87);
+    }
+}
+@else {
+    .container{
+        padding: 10px;
+        background-color: rgb(159, 159, 161);
+        border:2px solid rgb(58, 58, 59); 
+       }
+       h1{
+        padding: 10px;
+        color: rgb(29, 29, 29);
+        border: 2px solid rgb(8, 8, 8);
+    }
+    p{
+        padding: 5px;
+        color: rgb(30, 30, 31);
+    }
+}
+/* @for $i from 1 to 5{
+    .imgsize#{$i}{
+        border: 2px solid black;
+        margin-left: $i*100px;
+width: 100px;
+height: 100px;
+    }
+} */
+

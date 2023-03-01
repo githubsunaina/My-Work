@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript">
+        function deletebtn(){
+            flag=confirm("Confirm Delete : Record will be delete \n Are you sure ?");
+         if(flag==true)
+         {
+            /* document.querySelector("p").innerText= document.writeln("Record Deleted <br> <a href='examples2.html'> Back "); */
+             document.getElementById("para").outerHTML=" <h2> Record deleted </h2>";   
+         }
+         else{
+            // document.getElementById("para").innerHTML="<font color='red' <b> You cancled <b> <font>";
+                console.warn("you cancled");
+         }
+     
+        }
+    </script>
+</head>
+<body >
+   
+   
+        <h2>click on this button.</h2>
+     
+        <button onclick="deletebtn()">Delete</button>
+        <p id="para"></p>
+   
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body> 
+</html>

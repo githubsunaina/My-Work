@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        h1,
+        button {
+            margin: 20px;
+        }
+    </style>
+    <script>
+        function modall() {
+            document.querySelector("#detail").style.display = "none";
+        }
+        function addclk() {
+
+            document.querySelector("#detail").style.display = "block";
+            document.querySelector("#lblnm").innerText = document.querySelector("#nm").value;
+            document.querySelector("#lblpr").innerText = document.querySelector("#pr").value;
+            // document.querySelector("#lblst").innerText = document.querySelector("#st").value;
+            document.querySelector("#lblsh").innerText = document.querySelector("#sh").value;
+            stockcheck = document.querySelector("#st");
+            if (stockcheck.checked) {
+                status = "Available";
+            }
+            else {
+                status = "Out of Stock";
+            }
+
+            document.querySelector("#lblst").innerText = status;
+
+        }
+        function update() {
+            document.querySelector("#add").style.display = "none";
+            document.querySelector("#up").style.display = "block";
+        }
+function neww(){
+    document.querySelector("#up").style.display = "none";
+}
+function addup(){
+   addclk();
+}
+    </script>
+</head>
+
+<body onload="modall()">
+    <h1 id="heading">Adding Products</h1>
+    <button class="btn btn-primary" data-bs-target="#mod" onclick="neww()" data-bs-toggle="modal" id="btn">Add new products</button>
+    <div class=" modal " id="mod">
+        <div class=" modal-dialog ">
+            <div class="modal-content">
+
+                <div class=" modal-header">
+                    <h2>Add new products</h2>
+                    <button class="btn btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class=" modal-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd><input type="text" class="form-control" id="nm"></dd>
+                    </dl>
+                    <dl>
+                        <dt>Price</dt>
+                        <dd><input type="text" class="form-control" id="pr"></dd>
+                    </dl>
+                    <dl>
+                        <dt>Stock</dt>
+                        <dd><input type="checkbox" class="form-check-input" id="st">Available</dd>
+                    </dl>
+                    <dl>
+                        <dt>Shipped to</dt>
+                        <dd><select class="form-select" id="sh">
+                                <option>Delhi</option>
+                            </select></dd>
+                    </dl>
+                </div>
+                <div class=" modal-footer">
+                    <button class="btn btn-primary" onclick="addclk()" data-bs-dismiss="modal" id="add">Add
+                        product</button>
+                    <button class="btn btn-success" onclick="addup()" data-bs-dismiss="modal" id="up">Update</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">cancle</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="detail">
+        <h3>Product Details</h3>
+        <dl class="row">
+            <dt class="col-4">Name</dt>
+            <dd class="col-8" id="lblnm"></dd>
+            <dt class="col-4">Price</dt>
+            <dd class="col-8" id="lblpr"></dd>
+            <dt class="col-4">Stock</dt>
+            <dd class="col-8" id="lblst"></dd>
+            <dt class="col-4">Shipped To</dt>
+            <dd class="col-8" id="lblsh"></dd>
+            <button class="btn btn-primary w-25 h-25" onclick="update()" data-bs-target="#mod"
+                data-bs-toggle="modal">Edit</button>
+    </div>
+
+    </div>
+    </div>
+
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

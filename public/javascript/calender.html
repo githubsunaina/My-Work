@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dl{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        dt{
+            font-size: 20px;
+            margin: 10px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+     var obj=new Map();
+     obj.set(1,"html");
+     obj.set(2,"CSS");
+     obj.delete(1);
+   for(var item of obj.entries()){  
+     document.writeln(item +"<br>"  ) ;
+   }
+  
+   
+
+ /*  function clk(){
+    
+    var date=new Date(document.querySelector("#tym").value);
+    var weekdays=["sunday","monday","tuesday","wednesday","thrusday","friday","saturday"];
+     var monthname=["jan","feb","march","april","may","june","july","aug","sept","oct","nov","dec"];
+     var day=date.getDay();
+    var dateshow=date.getDate();
+   var months=date.getMonth();
+   var year=date.getFullYear();
+
+   /* document.querySelector("#lblday").innerHTML=`${weekdays[day]}`;
+   document.querySelector("#lbldate").innerHTML=`${date}`;
+ document.querySelector("#lblmonth").innerHTML=`${monthname[months]}`;
+   document.querySelector("#lblyear").innerHTML=`${year}`; */
+   /* document.querySelector("#lblday").innerHTML=weekdays[day];
+   document.querySelector("#lbldate").innerHTML=dateshow;
+ document.querySelector("#lblmonth").innerHTML=monthname[months];
+   document.querySelector("#lblyear").innerHTML=year;
+   document.querySelector("#lbltime").innerHTML=date.toLocaleTimeString(); }*/
+
+    </script>
+</head>
+<body>
+   <!--  Departure : <input type="datetime-local" id="tym"> <button onclick="clk()">Submit</button>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Departure Details</legend>
+        <dl>
+            <dt>Departure Day</dt>
+            <dd id="lblday"></dd>
+            <dt>Departure Date</dt>
+            <dd id="lbldate"></dd>
+            <dt>Departure Month</dt>
+            <dd id="lblmonth"></dd>
+            <dt>Departure Year</dt>
+            <dd id="lblyear"></dd>
+            <dt>Departure Time</dt>
+            <dd id="lbltime"></dd>
+        </dl>
+    </fieldset>
+    <br><br> -->
+<div class="para"></div>
+</body>
+</html>

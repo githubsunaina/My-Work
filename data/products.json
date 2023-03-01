@@ -1,0 +1,15 @@
+[
+    {
+    "Name":"Samsung TV",
+    "Price":"3500.44",
+    "image":"../Capture3.PNG"
+},
+{
+    "Name":"Nike Casuals",
+    "Price":"6500.54"
+},
+{
+    "Name":"Watch",
+    "Price":"2300.27"
+}
+]

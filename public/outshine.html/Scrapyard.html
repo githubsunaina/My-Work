@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outSHINE</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../src/outshine.css">
+    <script>
+        function prod_load(url) {
+            document.querySelector("#cat_main").innerHTML = "";
+            fetch(url)
+                .then(function (res) {
+                    return res.json();
+                })
+                .then(function (olditems) {
+                    for (var olditem of olditems) {
+                        var div = document.createElement("div");
+                        div.className = "card m-2 p-2";
+                        div.style.width = "200px";
+                        div.innerHTML = `
+                  <img src=${olditem.image} height="130" class="card-img-top">
+                  <div class="card-header" style="height:50px">
+                      <p>${olditem.Title}</p>
+
+                      </div>
+                      <div class="card-body">
+                          <dl><dt>Price</dt>
+                              <dd>${olditem.Price}</dd>
+                              <dt>Category</dt>
+                              <dd>${olditem.category}</dd>
+                          </dl>
+                          </div>
+                          <div class="card-footer">
+                              <button class="btn btn-danger w-100" onclick="addclick(${olditem.id})"><span class="bi bi-cart2"></span>Add to Cart</button>
+                              </div>
+                  `
+                            ;
+                        document.querySelector("#cat_main").appendChild(div);
+                    }
+                })
+        }
+        function addclick(id) {
+            fetch(`http://localhost:3000/olditems/${id}`)
+                .then(function (res) {
+                    return res.json();
+                })
+                .then(function (olditem) {
+                    var flag= confirm(`${olditem.Title} \n Add to Cart`);
+                    if(flag == true){
+                    cart.push(olditem);
+                    item_count();
+                    }
+                })
+           }
+           function viewitems(){
+            document.querySelector("tbody").innerHTML="";
+            for(var item of cart)
+         {
+           var tr=document.createElement("tr");
+           var tdtitle=document.createElement("td");
+           var tdprice=document.createElement("td");
+           var tdimage=document.createElement("td");
+           tdtitle.innerHTML=item.Title;
+           tdprice.innerHTML=item.Price;
+           tdimage.innerHTML=`<img src=${item.image} height="100px" width="100px">`;
+           tr.appendChild(tdtitle);
+           tr.appendChild(tdprice);
+           tr.appendChild(tdimage);
+           document.querySelector("tbody").appendChild(tr);
+         }
+       
+           }
+        var cart = [];
+        function item_count() {
+            document.querySelector("#addcart").innerHTML = cart.length;
+        }
+        function all_clk() {
+            prod_load("http://localhost:3000/olditems");
+        }
+        function glass_clk() {
+            prod_load("http://localhost:3000/olditems/?category=Glass");
+        }
+        function other_clk() {
+            prod_load("http://localhost:3000/olditems/?category=Others");
+        }
+        function furniture_clk() {
+            prod_load("http://localhost:3000/olditems/?category=Furniture");
+        }
+        function load() {
+            prod_load("  http://localhost:3000/olditems");
+            item_count();
+        }
+
+    </script>
+    <style>
+        body {
+            background: none;
+        }
+    </style>
+</head>
+
+<body onload="load()">
+    <header class="button "> <button class="btn btn-warning m-2 ms-5 btn_old " onclick="old_clk()">OLD</button>
+        <a href="Accessories.html"> <button class="btn btn-success btn_shine">SHINE</button></a>
+    </header>
+    <section class="row categories_section">
+        <nav class="col-3 ">
+            <div class="categories_nav">
+                <h2>All Categories</h2>
+                <div class="card">
+                    <div class=" card-header">
+                        <dl>
+                            <dt>Filters</dt>
+                            <dd>By Category :</dd>
+                        </dl>
+                    </div>
+                    <div class=" card-body categories_cbody">
+                        <div class="btnn"> <button onclick="all_clk()">All</button></div>
+                        <div class="btnn"> <button onclick="glass_clk()">Glass & Ceromics</button></div>
+                        <div class="btnn"><button onclick="home_clk()">Fabrics</button></div>
+                        <div class="btnn"> <button onclick="men_clk()">Metals</button></div>
+                        <div class="btnn"> <button onclick="women_clk()">Plastic</button></div>
+                        <div class="btnn"> <button onclick="accessories_clk()">Paper</button></div>
+                        <div class="btnn"> <button onclick="jewellery_clk()">Rubber and Leather</button></div>
+                        <div class="btnn"><button onclick="electronic_clk()">Electronics</button></div>
+                        <div class="btnn"><button onclick="furniture_clk()">Woods & Furniture</button></div>
+                        <div class="btnn"><button onclick="other_clk()">Others</button></div>
+
+
+                        <br><br>
+                        <div>By Price :</div>
+                    </div>
+                    <div class=" card-footer">
+                        <div class=" form-range"></div>
+                        <div>Range :</div>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="col-7 categories_main d-flex flex-wrap overflow-auto" style="height: 35rem;" id="cat_main">
+
+        </div>
+        <div class="col-2 categories_article"><button class="btn btn-danger w-100" onclick="viewitems()" data-bs-target="#showmodal" data-bs-toggle="modal" ><span class="bi bi-cart2"></span>
+                [<span id="addcart"></span>] Your Cart</button></div>
+
+    </section>
+  <div class="modal " id="showmodal">
+  <div class=" modal-dialog ">
+    <div class=" modal-content overflow-auto" style="height: 35rem;">
+        <div class="modal-header" data-bs-dismiss="modal">
+            <h2>Your Cart Items</h2>
+         <button class="btn btn-close"></button>
+        </div>
+        <div class=" modal-body ">
+            <table class=" table ">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Preview</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class=" modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+        </div>
+    </div>
+  </div>
+  </div>
+    
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
