@@ -3,8 +3,8 @@
     {
       "id": 1,
       "Title": "Candle",
-      "Price": "60.23",
-      "image": "../../public/outshine.html/images/candle.jpg",
+      "Price": "100",
+      "image": "../../public/outshine/images/candle.jpg",
       "category": "Home Decor"
     },
     {
@@ -12,21 +12,21 @@
       "Title": "Candle",
       "Price": "200.90",
       "category": "Home Decor",
-      "image": "../../public/outshine.html/images/candle_holder.jpg"
+      "image": "../../public/outshine/images/candle_holder.jpg"
     },
     {
       "id": 4,
       "Title": "Candle",
       "Price": "60.23",
       "category": "Home Decor",
-      "image": "../../public/outshine.html/images/candle_holder2.PNG"
+      "image": "../../public/outshine/images/candle_holder2.PNG"
     },
     {
       "id": 5,
       "Title": "CD",
       "Price": "60.23",
       "category": "Home Decor",
-      "image": "../../public/outshine.html/images/cd_usage.PNG"
+      "image": "../../public/outshine/images/cd_usage.PNG"
     },
     {
       "id": 6,
@@ -166,7 +166,7 @@
       "Title": "Candle",
       "Price": "100.23",
       "category": "Home Decor",
-      "image": "../../public/outshine.html/images/candle_holder.jpg"
+      "image": "../../public/outshine/images/candle_holder.jpg"
     }
   ],
   "categories": [
